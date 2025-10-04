@@ -5,11 +5,10 @@
     "version": "1.0.0",
     "description": "API documentation for Users and Properties collections"
   },
-  "servers": [
-    {
-      "url": "http://localhost:3000",
-      "description": "Development server"
-    }
+  "host": "property-listing-lcak.onrender.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
   ],
   "paths": {
     "/api/properties": {
