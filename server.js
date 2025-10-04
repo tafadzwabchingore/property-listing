@@ -41,5 +41,5 @@ app.use(errorHandler);
 // Use Render-assigned port or 3000 locally
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () =>
-  console.log(`Server running on port ${PORT}. Access Swagger at /api-docs`)
+  console.log(`Server running on localhost:${PORT}. Access Swagger at /api-docs`)
 );
