@@ -27,6 +27,12 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
+
+// Redirect root to Swagger docs
+app.get("/", (req, res) => {
+  res.redirect("/api-docs");
+});
+
 app.use("/api/users", userRoutes);
 app.use("/api/properties", propertyRoutes);
 
